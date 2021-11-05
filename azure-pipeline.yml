@@ -1,0 +1,13 @@
+# Creating build pipeline for dotnet app
+stages:
+- stage: continious-integration
+  displayname: continious-integration
+  jobs:
+  - job: dotnet-build
+    displayName: dotnet-build-job
+    steps:
+     - script: dotnet-restore
+     - script: dotnet-build
+     - script: dotnet-test
+     - script: dotnet-publish
+       displayname: dotnet dotnet-publish-artifact
