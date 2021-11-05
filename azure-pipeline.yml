@@ -1,7 +1,7 @@
 # Creating build pipeline for dotnet app
 stages:
-- stage: continiousintegration
-  displayname: continiousintegration
+- stage: continious integration
+  displayname: continious integration
   jobs:
   - job: dotnetbuild
     displayName: dotnet build job
