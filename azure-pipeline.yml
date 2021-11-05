@@ -10,4 +10,4 @@ stages:
      - script: dotnet-build
      - script: dotnet-test
      - script: dotnet-publish
-       displayname: dotnet dotnet-publish-artifact
+       displayname: dotnet dotnet-publish-artifacts
